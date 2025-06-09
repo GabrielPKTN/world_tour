@@ -5,13 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Odor+Mean+Chey&display=swap" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <script src="https://kit.fontawesome.com/2517208661.js" crossorigin="anonymous"></script>
     <title>World Tours</title>
 </head>
-<body class="h-screen w-screen font-[Inria_Sans] w-[400%]">
+
+<body class="h-screen w-screen font-[Inria_Sans] w-screen">
     <img src="./img/background.png" alt="background img" class="object-cover h-screen w-screen absolute -z-99">
+    
     <header class="h-[10%]">
         <menu class="text-base flex flex-row justify-center gap-[50px] text-white p-[25px]">
             <li class="hover:border-b-2 hover:text-[#FFBC00] duration-50 ease-in cursor-pointer">Home</li>
@@ -21,37 +23,48 @@
             <li class="hover:border-b-2 hover:text-[#FFBC00] duration-50 ease-in cursor-pointer">Car Rentals</li>
         </menu>
     </header>
-    <main class="flex flex-row text-white h-[90%] justify-center items-center">
-        <section class="flex flex-col gap-[30px] justify-items-end items-end pl-[42px] w-[576px] text-end">
-            <h1 class="text-[5rem] font-[Odor_Mean_Chey] font-bold">World Tours</h1>
+
+    <main class="flex flex-col xl:flex-row text-white h-[90%] justify-center items-center">
+        
+        <section class="flex flex-col gap-[30px] xl:justify-items-end xl:items-end items-center xl:pl-[38px] w-md text-center xl:text-end">
+            <h1 class="text-[4.5rem] font-[Odor_Mean_Chey] font-normal">World Tours</h1>
             <p>This text presents my research journey on the topic of Music and Tourism Imaginaries and gives the context which led to the publication of this special issue of Via Tourism Review.</p>
             <button class="text-black bg-[#FFBC00] w-[138px] h-[46px] rounded-sm cursor-pointer divide-none hover:scale-[1.1] duration-100 ease-in">see more</button>
         </section>
-        <section class="flex flex-col items-end overflow-hidden w-[80%]">
-            <div class="flex justify-center pr-[70px]">
-                <button class="rounded-[50%] bg-gray-200 opacity-75 w-[2.5rem] h-[2.5rem] cursor-pointer"><i class="fa-solid fa-chevron-left" style="color: #0e1f77; opacity: 0.5;"></i></button>
-                <div class="w-[10px] h-[10px]"></div>
-                <button class="rounded-[50%] bg-gray-200 opacity-75 w-[2.5rem] h-[2.5rem] cursor-pointer"><i class="fa-solid fa-chevron-right" style="color: #0e1f77; opacity: 0.5;"></i></button>
-            </div>
-            <div class="flex flex-row items-center gap-[15px] translate-x-30 h-[470px]">
+        
+        <section class="flex flex-col items-end overflow-hidden xl:w-[80%] w-[150%]">
+            
+            <div class="hidden xl:flex justify-center gap-[10px] pr-[70px]">
+                
+                <button class="rounded-[50%] bg-gray-200 opacity-75 w-[2.5rem] h-[2.5rem] cursor-pointer">
+                    <i class="fa-solid fa-chevron-left" style="color: #0e1f77; opacity: 0.5;"></i>
+                </button>
 
-                <div class="flex flex-col items-center relative group translate-y-10">
-                    <img src="./img/image_1.png" alt="destination img" class="rounded-2xl w-[288px] h-[356px] hover:border-4 hover:border-[#ADADAD35] duration-100 ease-in shadow-black">
-                    <div class="group-hover:opacity-100 opacity-0 duration-200 ease-in translate-y-1/2 group-hover:-translate-y-0.5">
+                <button class="rounded-[50%] bg-gray-200 opacity-75 w-[2.5rem] h-[2.5rem] cursor-pointer">
+                    <i class="fa-solid fa-chevron-right" style="color: #0e1f77; opacity: 0.5;"></i>
+                </button>
+
+            </div>
+
+            <div class="flex flex-row items-center xl:gap-[15px] gap-[30px] xl:translate-x-30 h-[470px] overflow-hidden relative">
+
+                <div class="flex flex-col items-center relative group xl:translate-y-10">
+                    <img src="./img/image_1.png" alt="destination img" class="rounded-2xl xl:w-[288px] h-[22rem] xl:hover:border-4 xl:hover:border-[#ADADAD35] duration-100 ease-in">
+                    <div class="xl:group-hover:opacity-100 opacity-0 duration-200 ease-in translate-y-1/2 group-hover:-translate-y-0.5">
                         Okavango Delta
                     </div>
                 </div>
 
-                <div class="flex flex-col items-center relative group translate-y-5">
-                    <img src="./img/image_2.png" alt="destination img" class="rounded-2xl w-[288px] h-[356px] hover:border-4 hover:border-[#ADADAD35] duration-100 ease-in">
-                    <div class="group-hover:opacity-100 opacity-0 duration-200 ease-in translate-y-1/2 group-hover:-translate-y-0.5">
+                <div class="flex flex-col items-center relative group xl:translate-y-5">
+                    <img src="./img/image_2.png" alt="destination img" class="rounded-2xl xl:w-[288px] h-[22rem] xl:hover:border-4 xl:hover:border-[#ADADAD35] duration-100 ease-in">
+                    <div class="xl:group-hover:opacity-100 xl:opacity-0 duration-200 ease-in translate-y-1/2 group-hover:-translate-y-0.5">
                         Okavango Delta
                     </div>
                 </div>
 
                 <div class="flex flex-col items-center relative group">
-                    <img src="./img/image_3.png" alt="destination img" class="rounded-2xl w-[288px] h-[356px] hover:border-4 hover:border-[#ADADAD35] duration-100 ease-in">
-                    <div class="group-hover:opacity-100 opacity-0 duration-200 ease-in translate-y-1/2 group-hover:-translate-y-0.5">
+                    <img src="./img/image_3.png" alt="destination img" class="rounded-2xl xl:w-[288px] h-[22rem] xl:hover:border-4 xl:hover:border-[#ADADAD35] duration-100 ease-in">
+                    <div class="xl:group-hover:opacity-100 opacity-0 duration-200 ease-in translate-y-1/2 group-hover:-translate-y-0.5">
                         Okavango Delta
                     </div>
                 </div>
